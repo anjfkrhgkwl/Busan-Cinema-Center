@@ -45,7 +45,7 @@ $(function(){
         listColor.removeClass('on')
         $(this).addClass('on');
     })
-    listColor.mouserleave(function(){
+    listColor.mouseleave(function(){
         listColor.removeClass('on');
     })
 });
