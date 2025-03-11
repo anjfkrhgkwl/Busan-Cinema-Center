@@ -1,0 +1,288 @@
+<body>
+    <script>
+        $(function(){
+    $('a').click(function(event){
+        event.preventDefault();
+    }) //클릭 이벤트 무시
+    });
+
+    // nav 
+    $(function(){
+        let navListWrap = $('.header .nav .gnb-wrap')
+        let navList = $('.header .nav .gnb-wrap .gnb')
+        let navListAll = $('.header .nav .depth02')
+        let navBg = $('.header .nav .gnb .bg')
+
+        let colorCount = 4; //색상 변수
+
+        navList.mouseenter(function(){
+            //let index = $(this).index();
+            navList.removeClass('on') 
+            $(this).addClass('on')
+            navBg.addClass('show')
+
+            navList.each(function(index){
+                let colorIndex = index % colorCount;
+                $(this).find('.depth01 > a').css('color', 'var(--color-p0' + (colorIndex + 1) + ')');
+            })
+        });
+        navList.mouseleave(function(){
+            navList.removeClass('on')
+            navBg.removeClass('show')
+            navList.find('.depth01 > a').css('color', '');
+        })
+
+        /* navListWrap.mouseenter(function(){
+            navList.each(function(index){
+                let colorIndex = index % colorCount;
+                $(this).find('.depth01 > a').css('color', 'var(--color-p0' + (colorIndex + 1) + ')');
+            })
+        }) */
+    })
+
+    </script>
+    
+    <div class="header">
+        <div class="header-inner">
+            <h1 class="logo">
+                <a href="#">
+                    <img src="/img/logo/로고01.png" alt="Brand-Logo">
+                </a>
+            </h1> <!-- logo end -->
+            
+            <ul class="user-support-list">
+                <li class="login">
+                    <a href="#">Login</a>
+                </li> 
+                <li class="join">
+                    <a href="#">Join</a>
+                </li> 
+                <li class="news">
+                    <a href="#">알림마당</a>
+                </li> 
+                <li class="support-center">
+                    <a href="#">고객센터</a>
+                </li> 
+                <li class="lang-btn">
+                    <ul class="lang">
+                        <li class="kor"><a href="#">KOR</a></li>
+                        <li class="eng"><a href="#">ENG</a></li>
+                    </ul>
+                </li>
+            </ul><!-- .user-support-list end -->
+
+        </div> <!-- header-inner end -->
+
+        <nav class="nav">
+            <div class="gnb-wrap">
+                <ul class="gnb">
+                    <li class="depth01">
+                        <a href="#"><p>영화</p><p>프로그램</p></a>
+                        <ul class="depth02">
+                            <li>
+                                <a href="#">영화</a>
+                                <ul class="depth03">
+                                    <li><a href="#">영화시간표</a></li>
+                                    <li><a href="#">상영예정작</a></li>
+                                    <li><a href="#">지난 영화</a></li>
+                                    <li><a href="#">영화로운 시선</a></li>
+                                </ul><!-- .depth03 end -->
+                            </li>
+                            <li>
+                                    <a href="#">프로그램</a>
+                                    <ul class="depth03">
+                                        <li><a href="#">프로그램 시간표</a></li>
+                                        <li><a href="#">예정 프로그램</a></li>
+                                        <li><a href="#">지난 프로그램</a></li>
+                                        <li><a href="#">대관 신청</a></li>
+                                    </ul>
+                            </li>
+                            <li>
+                                    <a href="#">극장</a>
+                                    <ul class="depth03">
+                                        <li><a href="#">극장별 좌석배치도</a></li>
+                                        <li><a href="#">대관 신청</a></li>
+                                        <li><a href="#">시네마테크</a></li>
+                                        <li><a href="#">해외공동주최영화제 소개</a></li>
+                                        <li><a href="#">부산국제인공지능영화제</a></li>
+                                    </ul>
+                            </li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- depth01 end -->
+                    <li class="bg">
+                        <p>nav-bg</p>
+                    </li><!-- .bg end -->
+                </ul><!-- .gnb end -->
+
+                <ul class="gnb">
+                    <li class="depth01">
+                        <a href="#"><p>공연</p><p>전시</p></a>
+                        <ul class="depth02">
+                            <li>
+                                <a href="#">공연</a>
+                                <ul class="depth03">
+                                    <li><a href="#">공연 일정</a></li>
+                                    <li><a href="#">예매 안내</a></li>
+                                    <li><a href="#">지난 공연</a></li>
+                                    <li><a href="#">객석 나눔</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">전시</a>
+                                <ul class="depth03">
+                                    <li><a href="#">전시·행사 일정</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">극장</a>
+                                <ul class="depth03">
+                                    <li><a href="#">극장별 좌석배치도</a></li>
+                                    <li><a href="#">대관 신청</a></li>
+                                </ul>
+                            </li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- depth01 end -->
+                    <li class="bg">
+                        <p>nav-bg</p>
+                    </li><!-- .bg end -->
+                </ul><!-- .gnb end -->
+
+                <ul class="gnb">
+                    <li class="depth01">
+                        <a href="#">영화도서관</a>
+                        <ul class="depth02">
+                            <li>
+                                <a href="#">영화도서관</a>
+                                <ul class="depth03">
+                                    <li><a href="#">소개</a></li>
+                                    <li><a href="#">자료 검색</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">행사 안내</a></li>
+                                    <li><a href="#">포토뉴스</a></li>
+                                    <li><a href="#">필름 아카이브</a></li>
+                                    <li><a href="#">대관 신청</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">어린이 복합 문화공간</a>
+                                <ul class="depth03">
+                                    <li><a href="#">들락날락</a></li>
+                                </ul>
+                            </li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- depth01 end -->
+                    <li class="bg">
+                        <p>nav-bg</p>
+                    </li><!-- .bg end -->
+                </ul><!-- .gnb end -->
+
+                <ul class="gnb">
+                    <li class="depth01">
+                        <a href="#">아카데미</a>
+                        <ul class="depth02">
+                            <li>
+                                <a href="#">영화·문화 아카데미</a>
+                                <ul class="depth03">
+                                    <li><a href="#">아카데미 일정</a></li>
+                                    <li><a href="#">영화 아카데미</a></li>
+                                    <li><a href="#">예술 아카데미</a></li>
+                                    <li><a href="#">어린이 청소년 아카데미</a></li>
+                                    <li><a href="#">시설 기자재</a></li>
+                                    <li><a href="#">대관 신청</a></li>
+                                </ul>
+                            </li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- depth01 end -->
+                    <li class="bg">
+                        <p>nav-bg</p>
+                    </li><!-- .bg end -->
+                </ul><!-- .gnb end -->
+
+                <ul class="gnb">
+                    <li class="depth01">
+                        <a href="#"><p>이벤트</p><p>제휴</p></a>
+                        <ul class="depth02">
+                            <li>
+                                <a href="#">이벤트</a>
+                                <ul class="depth03">
+                                    <li><a href="#">진행중인 이벤트</a></li>
+                                    <li><a href="#">지난 이벤트</a></li>
+                                    <li><a href="#">당첨자 발표</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">제휴</a>
+                                <ul class="depth03">
+                                    <li><a href="#">제휴 안내</a></li>
+                                    <li><a href="#">메세나 기업 모집</a></li>
+                                    <li><a href="#">회원제 안내</a></li>
+                                    <li><a href="#">광고 신청</a></li>
+                                    <li><a href="#">촬영 신청</a></li>
+                                    <li><a href="#">투어 신청</a></li>
+                                </ul>
+                            </li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- depth01 end -->
+                    <li class="bg">
+                        <p>nav-bg</p>
+                    </li><!-- .bg end -->
+                </ul><!-- .gnb end -->
+
+                <ul class="gnb">
+                    <li class="depth01">
+                        <a href="#">영화의전당</a>
+                        <ul class="depth02">
+                            <li>
+                                <a href="#">소개</a>
+                                <ul class="depth03">
+                                    <li><a href="#">인사말</a></li>
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#">CI 소개</a></li>
+                                    <li><a href="#">조직가구</a></li>
+                                    <li><a href="#">운영방향</a></li>
+                                    <li><a href="#">클린경영</a></li>
+                                    <li><a href="#">건축개요</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">안내</a>
+                                <ul class="depth03">
+                                    <li><a href="#">시설소개</a></li>
+                                    <li><a href="#">편의시설</a></li>
+                                    <li><a href="#">오시는길</a></li>
+                                    <li><a href="#">주차안내</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">고객센터</a>
+                                <ul class="depth03">
+                                    <li><a href="#">자주찾는 질문</a></li>
+                                    <li><a href="#">장애인 이용안내</a></li>
+                                    <li><a href="#">고객참여</a></li>
+                                    <li><a href="#">자유게시판</a></li>
+                                    <li><a href="#">분실물센터</a></li>
+                                    <li><a href="#">회원제 안내</a></li>
+                                    <li><a href="#">개인정보 처리방법</a></li>
+                                    <li><a href="#">사이트맵</a></li>
+                                </ul>
+                            </li>
+                        </ul><!-- .depth02 end -->
+                    </li><!-- depth01 end -->
+                    <li class="bg">
+                        <p>nav-bg</p>
+                    </li><!-- .bg end -->
+                </ul><!-- .gnb end -->
+            </div><!-- .gnb-wrap end -->
+
+            <div class="nav-icons">
+                <div class="search">
+                    <img src="/img/util-icon/Search.png" alt="search">
+                </div><!-- .search end -->
+                <div class="menu">
+                    <img src="/img/util-icon/Menu.png" alt="menu">
+                </div><!-- .menu end -->
+            </div><!-- .nav-icons end -->
+        </nav><!-- .nav end -->
+
+    </div><!-- .header end -->
+</body>

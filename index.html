@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화의전당</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="main-visual">
+        <div class="main-inner">
+            <div class="visual-swiper-wrap">
+                <div class="swiper main-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="img/main-visual01.jpg" alt="main-visual01">
+                      </div><!-- .swiper-slide end -->
+                
+                      <div class="swiper-slide">
+                        <img src="img/main-visual02.jpg" alt="main-visual02">
+                      </div><!-- .swiper-slide end -->
+                      <div class="swiper-slide">
+                        <img src="img/main-visual03.jpg" alt="main-visual03">
+                      </div><!-- .swiper-slide end -->
+                    </div><!-- .swiper-wrapper end -->
+                </div><!-- .swiper mySwiper end -->
+                <div class="swiper-button-next visual-swiper-next"></div>
+            </div><!-- .visual-swiper-wrap end -->
+
+              <div class="main-myticket">
+                <div class="myticket">
+                    <h2>나의 티켓</h2>
+                    <div class="ticket-img">
+                        <img src="img/202502141110250.jfif" alt="movie-img">
+                    </div><!-- .ticket-img end -->
+                    <div class="ticket-text-wrap">
+                        <div class="ticket-line">
+                            <p>ticket-line</p>
+                        </div>
+                        <span class="movie-title">퇴마록</span>
+                        <ul class="text-list">
+                            <li>
+                               <ul class="datetime">
+                                <li>2025-02-21 (금)</li>
+                                <li>20:00 ~ 22:30</li>
+                               </ul>
+                            </li>
+                            <li>
+                                <ul class="seat">
+                                    <li><span>시네마테크</span>K열 7열</li>
+                                    <li>성인 1명</li>
+                                </ul>
+                            </li>
+                        </ul><!-- .text-list end -->
+                    </div><!-- .ticket-text-wrap end -->
+                </div><!-- .myticket end -->
+                <div class="barcode-wrap">
+                    <img src="img/barcode 1.png" alt="barcode-img">
+                    <p>2025022120250222</p>
+                </div><!-- .barcode-wrap end -->
+              </div><!-- .main-ticket end -->
+        </div><!-- .main-inner end -->
+    </main><!-- .main-visual end -->
+
+    <section class="section01 todays-movie">
+        <div class="section-inner">
+            <div class="section-title-wrap">
+                <div class="title-wrap">
+                    <h3 class="sub-title">
+                        일일상영시간표
+                    </h3><!-- sub-title end -->
+                    <h2 class="main-title">
+                        오늘의<span>영화</span>
+                    </h2><!-- .main-title end -->
+                </div><!-- .title-wrap end -->
+
+                <div class="select-theater-btn">
+                    <p>극장 선택하기</p>
+                    <img src="img/util-icon/Expand_down.png" alt="expand-down">
+                    <ul class="select-theater">
+                        <li>중극장</li>
+                        <li>시네마테크</li>
+                        <li>소극장</li>
+                        <li>인디+</li>
+                    </ul><!-- .select-theater end -->
+                </div><!-- .select-theater-btn end -->              
+            </div><!-- .section-title-wrap end -->
+
+            <div class="swiper-list-wrap">
+                <div class="swiper theater-list">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="img/202502071040300.jpg" alt="movie-img">
+                      </div><!-- .swiper-slide end -->
+                      <div class="swiper-slide">
+                        <img src="img/202502122031320.jpg" alt="movie-img">
+                      </div><!-- .swiper-slide end -->
+                      <div class="swiper-slide">
+                        <img src="img/202502131711130.jpg" alt="movie-img">
+                      </div><!-- .swiper-slide end -->
+                      <div class="swiper-slide">
+                        <img src="img/202502131716450.jpg" alt="movie-img">
+                      </div><!-- .swiper-slide end -->
+                      <div class="swiper-slide">
+                        <img src="img/202502141110250.jfif" alt="movie-img">
+                      </div><!-- .swiper-slide end -->
+                      <div class="swiper-slide">
+                        <img src="img/202502141110250.jfif" alt="movie-img">
+                      </div><!-- .swiper-slide end -->
+                      <div class="swiper-slide">
+                        <img src="img/202502141110250.jfif" alt="movie-img">
+                      </div><!-- .swiper-slide end -->
+                      <div class="swiper-slide">
+                        <img src="img/202502141110250.jfif" alt="movie-img">
+                      </div><!-- .swiper-slide end -->
+                      <div class="swiper-slide">
+                        <img src="img/202502141110250.jfif" alt="movie-img">
+                      </div><!-- .swiper-slide end -->
+                    </div><!-- .swiper-wrapper end -->
+                </div><!-- .swiper theater-list end -->
+                <div class="swiper-button-next theater-list-next"></div>
+                <div class="swiper-button-prev theater-list-prev"></div>
+            </div><!-- .swiper-list-wrap end -->
+
+        </div><!-- .section-inner end -->
+    </section><!-- .section01 .todays-movie end -->
+
+    <section class="section02 busan-cinema-center-picks">
+        <div class="section-inner">
+            <div class="title-wrap">
+                <h3 class="sub-title">
+                    뭐하고 놀까?
+                </h3><!-- sub-title end -->
+                <h2 class="main-title">
+                    영화의전당<span>PICK!</span>
+                </h2><!-- .main-title end -->
+            </div><!-- .title-wrap end -->
+            <div class="pick-list-wrap">
+                <ul>
+                    <li class="pick-list click">
+                        <p class="category">#영화</p>
+                        <h4 class="list-title">가족과 함께 즐기는 영화</h4>
+                    </li>
+                    <li class="pick-list">
+                        <p class="category">#전시</p>
+                        <h4 class="list-title">아이들을 위한 특별한 공간</h4>
+                    </li>
+                    <li class="pick-list">
+                        <p class="category">#영화</p>
+                        <h4 class="list-title">연인과 달달한 시간</h4>
+                    </li>
+                    <li class="pick-list">
+                        <p class="category">#영화</p>
+                        <h4 class="list-title">독립영화 입문, 이건 어때요?</h4>
+                    </li>
+                </ul>
+
+                <ul class="pick-list-img">
+                    <li class="on">
+                        <img src="img/202501231317350.jpg" alt="pick-list-img">
+                    </li>
+                    <li>
+                        <img src="img/main-visual02.jpg" alt="pick-list-img">
+                    </li>
+                    <li>
+                        <img src="img/202502131716450.jpg" alt="pick-list-img">
+                    </li>
+                    <li>
+                        <img src="img/202502131711130.jpg" alt="pick-list-img">
+                    </li>
+                </ul>
+            </div><!-- .pick-list-wrap end -->
+
+        </div><!-- .section-inner end -->
+    </section><!-- .section02 busan-cinema-center-picks end -->
+
+
+
+     <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".main-swiper", {
+        loop: true,
+      navigation: {
+        nextEl: ".visual-swiper-next",
+      },
+    });
+    var swiper = new Swiper(".theater-list", {
+      slidesPerView: 4,
+      spaceBetween: 36,
+      navigation: {
+        nextEl: ".theater-list-next",
+        prevEl: ".theater-list-prev",
+      },
+    });
+  </script>
+</body>
+</html>

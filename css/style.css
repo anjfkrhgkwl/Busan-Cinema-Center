@@ -1,0 +1,399 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url('common.css');
+
+:root {
+    --font-suit: 'SUIT';
+    --font-normal: normal;
+    --font-semibold: 600;
+    --font-bold: bold;
+
+    --color-b: #1c1c1c;
+    --color-w: #ffffff;
+    --color-p01: #EC008C;
+    --color-p02: #00AEEF;
+    --color-p03: #80C342;
+    --color-p04: #2E3192;
+    --color-g01: #ECECEC;
+    --color-g02: #BBBBBB;
+    --color-g03: #666666;
+}
+
+/*********************** 공통 스타일 ************************/
+section {
+    margin-top: 130px;
+}
+
+.section-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.sub-title {
+    font-size: 18px;
+    font-weight: var(--font-normal);
+    margin-bottom: 10px;
+    margin-left: 4px;
+    letter-spacing: 1px;
+}
+.main-title {
+    font-size: 50px;
+    font-weight: var(--font-normal);
+}
+.main-title span {
+    font-weight: var(--font-bold);
+    margin-left: 10px;
+}
+
+/*************************** main-visual *****************************/
+
+.main-visual {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.main-visual .main-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.main-visual .visual-swiper-wrap {
+    width: 1295px;
+    position: relative;
+}
+.main-visual .main-swiper {
+    height: 640px;
+    border-radius: 0 30px 30px 0;
+    border: 2px solid var(--color-g01);
+}
+.main-visual .main-swiper .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+.main-visual .main-swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-visual .visual-swiper-next {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    color: var(--color-g03);
+    padding: 20px;
+    border: 2px solid var(--color-g01);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+.main-visual .visual-swiper-next::after {
+    font-size: 20px;
+    font-weight: var(--font-semibold);
+    margin-left: 3px;
+    margin-top: 1px;
+}
+
+.main-visual .visual-swiper-next:hover {
+    color: var(--color-w);
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.main-visual .main-myticket {
+    display: flex;
+}
+.main-visual .myticket {
+    padding: 30px;
+    border: 2px solid var(--color-g01);
+    border-radius: 30px;
+    border-right: 0;
+}
+.main-visual .myticket h2 {
+    font-size: 30px;
+    font-weight: var(--font-bold);
+    margin-bottom: 15px;
+}
+.main-visual .myticket .ticket-img {
+    width: 339px;
+    height: 396px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.main-visual .myticket .ticket-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-visual .myticket .ticket-text-wrap {
+    width: 329px;
+}
+.main-visual .myticket .ticket-text-wrap .ticket-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-b);
+    margin: 15px 0;
+}
+.main-visual .myticket .ticket-text-wrap .ticket-line p {
+    display: none;
+}
+.main-visual .myticket .movie-title {
+    display: block;
+    font-size: 24px;
+    font-weight: var(--font-bold);
+    margin-bottom: 15px;
+}
+.main-visual .myticket .text-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.main-visual .myticket .text-list > li {}
+.main-visual .myticket .text-list > li > ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.main-visual .myticket .text-list .datetime {}
+.main-visual .myticket .text-list .datetime > li {}
+.main-visual .myticket .text-list .seat {}
+.main-visual .myticket .text-list .seat > li {}
+.main-visual .myticket .text-list .seat span {
+    font-weight: var(--font-semibold);
+    margin-right: 10px;
+}
+
+.main-visual .barcode-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 30px;
+    border: 2px solid var(--color-g01);
+    border-radius: 30px 0 0 30px;
+    border-left: 0;
+}
+.main-visual .barcode-wrap::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 565px;
+    border-left: 2px dashed var(--color-g01);
+}
+.main-visual .barcode-wrap img {}
+.main-visual .barcode-wrap p {
+    font-size: 14px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    letter-spacing: 15px;
+    color: var(--color-g03);
+    margin-left: 30px;
+}
+
+
+/******************** section01 / todays-movie ********************/
+
+.todays-movie {}
+.todays-movie .section-inner {}
+.todays-movie .swiper-list-wrap {
+    position: relative;
+}
+.todays-movie .section-title-wrap {
+    display: flex;
+    align-items: end;
+}
+.todays-movie .section-title-wrap .sub-title {
+    font-size: 18px;
+    font-weight: var(--font-normal);
+    margin-bottom: 10px;
+    margin-left: 4px;
+}
+.todays-movie .section-title-wrap .main-title {
+    font-size: 50px;
+    font-weight: var(--font-normal);
+}
+.todays-movie .section-title-wrap .main-title span {
+    font-weight: var(--font-bold);
+    color: var(--color-p01);
+    margin-left: 10px;
+}
+.todays-movie .select-theater-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 40px;
+    padding: 13px 30px;
+    border: 1px solid var(--color-b);
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+
+    position: relative;
+}
+.todays-movie .select-theater-btn p {}
+.todays-movie .select-theater-btn img {}
+.todays-movie .select-theater-btn .select-theater {
+    width: 100%;
+    padding: 15px 30px;
+    border: 1px solid var(--color-b);
+    border-radius: 15px;
+    
+    background-color: var(--color-w);
+    margin-top: 10px;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+.todays-movie .select-theater-btn .select-theater.on {}
+.todays-movie .select-theater-btn .select-theater li {
+    margin-bottom: 30px;
+    color: var(--color-b);
+}
+.todays-movie .select-theater-btn .select-theater li.on {
+    color: var(--color-p01);
+    position: relative;
+}
+.todays-movie .select-theater-btn .select-theater li.on::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-p01);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.todays-movie .select-theater-btn .select-theater li:last-child {
+    margin-bottom: 0;
+}
+
+.todays-movie .theater-list {
+    margin-top: 30px;
+}
+.todays-movie .theater-list .swiper-wrapper {}
+.todays-movie .theater-list .swiper-slide {
+    width: 333px;
+    height: 475px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 2px solid var(--color-g01);
+    cursor: pointer;
+}
+.todays-movie .theater-list .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.todays-movie .theater-list-next,
+.todays-movie .theater-list-prev {
+    position: absolute;
+    color: var(--color-g03);
+    padding: 20px;
+    border: 2px solid var(--color-g01);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+.todays-movie .theater-list-next {
+    top: 50%;
+    right: -20px;
+}
+.todays-movie .theater-list-prev {
+    top: 50%;
+    left: -20px;
+}
+.todays-movie .theater-list-next::after,
+.todays-movie .theater-list-prev::after {
+    font-size: 20px;
+    font-weight: var(--font-semibold);
+    margin-left: 3px;
+    margin-top: 1px;
+}
+
+.todays-movie .theater-list-next:hover,
+.todays-movie .theater-list-prev:hover {
+    color: var(--color-w);
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+/*********************** section02 busan-cinema-center-picks *********************/
+
+.busan-cinema-center-picks {}
+.busan-cinema-center-picks .section-inner {}
+.busan-cinema-center-picks .section-inner .main-title span {
+    color: var(--color-p02);
+}
+.busan-cinema-center-picks .pick-list-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.busan-cinema-center-picks .pick-list-wrap ul {
+    width: 48%;
+}
+.busan-cinema-center-picks .pick-list-wrap .pick-list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 39px 30px;
+    position: relative;
+    cursor: pointer;
+}
+.busan-cinema-center-picks .pick-list-wrap .pick-list::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-g01);
+}
+.busan-cinema-center-picks .pick-list-wrap .pick-list.click {
+    background-color: var(--color-p02);
+    border-radius: 0 60px 60px 0;
+    color: var(--color-w);
+}
+.busan-cinema-center-picks .pick-list-wrap .pick-list.click::before {
+    display: none;
+}
+.busan-cinema-center-picks .pick-list-wrap .pick-list .category {
+    font-size: 18px;
+    padding: 10px 15px;
+    border: 2px solid var(--color-b);
+    border-radius: 30px;
+    letter-spacing: 1px;
+}
+.busan-cinema-center-picks .pick-list-wrap .pick-list.click .category {
+    border-color: var(--color-w);
+}
+.busan-cinema-center-picks .pick-list-wrap .pick-list .list-title {
+    font-size: 30px;
+    font-weight: var(--font-normal);
+}
+.busan-cinema-center-picks .pick-list-wrap .pick-list-img {
+    width: 49%;
+    height: 475px;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 2px solid var(--color-g01);
+}
+.busan-cinema-center-picks .pick-list-wrap .pick-list-img li {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.busan-cinema-center-picks .pick-list-wrap .pick-list-img li.on {
+    display: block;
+}
+.busan-cinema-center-picks .pick-list-wrap .pick-list-img li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
