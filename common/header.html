@@ -8,8 +8,8 @@
 
     // nav 
     $(function(){
-        let navListWrap = $('.header .nav .gnb-wrap .gnb')
-        let navList = $('.header .nav .gnb-wrap .gnb .depth01')
+        //let navListWrap = $('.header .nav .gnb-wrap .gnb')
+        let navList = $('.header .nav .gnb-wrap .gnb')
         let navListAll = $('.header .nav .depth02')
         let navBg = $('.header .nav .gnb .bg')
 
@@ -21,16 +21,20 @@
             $(this).addClass('on')
             navBg.addClass('show')
 
-            navListWrap.each(function(index){
+            let menuIndex = $(this) .index() + 1 ;
+            $(this).find('.depth01').css('color', 'var(--color-p0' + menuIndex + ')');
+            $(this).find('.point').css('background-color', 'var(--color-p0' + menuIndex + ')');
+
+            /* navListWrap.each(function(index){
                 let colorIndex = $(this).index() % colorCount;
                 $(this).css('color', 'var(--color-p0' + (colorIndex + 1) + ')');
                 $(this).find('.point').css('background-color', 'var(--color-p0' + (colorIndex + 1) + ')');
-            })
+            }) */
         });
         navList.mouseleave(function(){
             navList.removeClass('on')
             navBg.removeClass('show')
-            navListWrap.css('color', '');
+            navList.find('.depth01').css('color', '');
         })
 
         /* navListWrap.mouseenter(function(){

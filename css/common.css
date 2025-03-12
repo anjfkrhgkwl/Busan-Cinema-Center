@@ -104,11 +104,11 @@ body {
 .header .nav .gnb .depth01 > a .point span {
     display: none;
 }
-.header .nav .gnb .depth01.on > a .point {
+.header .nav .gnb.on .depth01 > a .point {
     opacity: 1;
     transition: 0.5s;
 }
-.header .nav .gnb .depth01.on > a .point span {
+.header .nav .gnb.on .depth01 > a .point span {
     display: none;
 }
 .header .nav .gnb .depth01 a p:first-child {
@@ -141,7 +141,7 @@ body {
     pointer-events: none;
 }
 
-.header .nav .gnb .depth01.on .depth02 {
+.header .nav .gnb.on .depth01 .depth02 {
     opacity: 1;
     transition: 0.9s;
     pointer-events: auto;
