@@ -21,6 +21,8 @@
             $(this).addClass('on')
             navBg.addClass('show')
 
+            //menuIndex 값이 4 이상이면 1로 돌려줘
+
             let menuIndex = $(this) .index() + 1 ;
             $(this).find('.depth01').css('color', 'var(--color-p0' + menuIndex + ')');
             $(this).find('.point').css('background-color', 'var(--color-p0' + menuIndex + ')');
