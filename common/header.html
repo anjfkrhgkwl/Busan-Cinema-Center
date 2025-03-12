@@ -22,7 +22,7 @@
             navBg.addClass('show')
 
             navListWrap.each(function(index){
-                let colorIndex = index % colorCount;
+                let colorIndex = $(this).index() % colorCount;
                 $(this).css('color', 'var(--color-p0' + (colorIndex + 1) + ')');
                 $(this).find('.point').css('background-color', 'var(--color-p0' + (colorIndex + 1) + ')');
             })
