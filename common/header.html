@@ -8,8 +8,8 @@
 
     // nav 
     $(function(){
-        let navListWrap = $('.header .nav .gnb-wrap')
-        let navList = $('.header .nav .gnb-wrap .gnb')
+        let navListWrap = $('.header .nav .gnb-wrap .gnb')
+        let navList = $('.header .nav .gnb-wrap .gnb .depth01')
         let navListAll = $('.header .nav .depth02')
         let navBg = $('.header .nav .gnb .bg')
 
@@ -21,15 +21,16 @@
             $(this).addClass('on')
             navBg.addClass('show')
 
-            navList.each(function(index){
+            navListWrap.each(function(index){
                 let colorIndex = index % colorCount;
-                $(this).find('.depth01 > a').css('color', 'var(--color-p0' + (colorIndex + 1) + ')');
+                $(this).css('color', 'var(--color-p0' + (colorIndex + 1) + ')');
+                $(this).find('.point').css('background-color', 'var(--color-p0' + (colorIndex + 1) + ')');
             })
         });
         navList.mouseleave(function(){
             navList.removeClass('on')
             navBg.removeClass('show')
-            navList.find('.depth01 > a').css('color', '');
+            navListWrap.css('color', '');
         })
 
         /* navListWrap.mouseenter(function(){
@@ -77,7 +78,12 @@
             <div class="gnb-wrap">
                 <ul class="gnb">
                     <li class="depth01">
-                        <a href="#"><p>영화</p><p>프로그램</p></a>
+                        <a href="#">
+                            <p>영화</p><p>프로그램</p>
+                            <div class="point">
+                                <span>point</span>
+                            </div>
+                        </a>
                         <ul class="depth02">
                             <li>
                                 <a href="#">영화</a>
@@ -116,7 +122,12 @@
 
                 <ul class="gnb">
                     <li class="depth01">
-                        <a href="#"><p>공연</p><p>전시</p></a>
+                        <a href="#">
+                            <p>공연</p><p>전시</p>
+                            <div class="point">
+                                <span>point</span>
+                            </div>
+                        </a>
                         <ul class="depth02">
                             <li>
                                 <a href="#">공연</a>
@@ -149,7 +160,12 @@
 
                 <ul class="gnb">
                     <li class="depth01">
-                        <a href="#">영화도서관</a>
+                        <a href="#">
+                            영화도서관
+                            <div class="point">
+                                <span>point</span>
+                            </div>
+                        </a>
                         <ul class="depth02">
                             <li>
                                 <a href="#">영화도서관</a>
@@ -178,7 +194,12 @@
 
                 <ul class="gnb">
                     <li class="depth01">
-                        <a href="#">아카데미</a>
+                        <a href="#">
+                            아카데미
+                            <div class="point">
+                                <span>point</span>
+                            </div>
+                        </a>
                         <ul class="depth02">
                             <li>
                                 <a href="#">영화·문화 아카데미</a>
@@ -200,7 +221,12 @@
 
                 <ul class="gnb">
                     <li class="depth01">
-                        <a href="#"><p>이벤트</p><p>제휴</p></a>
+                        <a href="#">
+                            <p>이벤트</p><p>제휴</p>
+                            <div class="point">
+                                <span>point</span>
+                            </div>
+                        </a>
                         <ul class="depth02">
                             <li>
                                 <a href="#">이벤트</a>
@@ -230,7 +256,12 @@
 
                 <ul class="gnb">
                     <li class="depth01">
-                        <a href="#">영화의전당</a>
+                        <a href="#">
+                            영화의전당
+                            <div class="point">
+                                <span>point</span>
+                            </div>
+                        </a>
                         <ul class="depth02">
                             <li>
                                 <a href="#">소개</a>

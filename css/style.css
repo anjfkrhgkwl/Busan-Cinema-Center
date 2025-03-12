@@ -283,6 +283,7 @@ section {
     overflow: hidden;
     border: 2px solid var(--color-g01);
     cursor: pointer;
+    position: relative;
 }
 .todays-movie .theater-list .swiper-slide img {
     width: 100%;
@@ -290,6 +291,59 @@ section {
     object-fit: cover;
 }
 
+.todays-movie .theater-list .swiper-slide .slide-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.8s;
+}
+.todays-movie .theater-list .swiper-slide::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1c88;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.8s;
+}
+.todays-movie .theater-list .swiper-slide:hover .slide-hover {
+    opacity: 1;
+    transition: 0.8s;
+}
+.todays-movie .theater-list .swiper-slide:hover::before {
+    opacity: 1;
+    transition: 0.8s;
+}
+.todays-movie .theater-list .swiper-slide .slide-hover div {
+    width: 160px;
+    height: 50px;
+}
+.todays-movie .theater-list .swiper-slide div p {
+    background-color: var(--color-w);
+    font-size: 18px;
+    color: var(--color-b);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.todays-movie .theater-list .swiper-slide .slide-hover {}
+.todays-movie .theater-list .swiper-slide .book-ticket {
+    margin-top: 30px;
+}
+.todays-movie .theater-list .swiper-slide .book-ticket p {
+    color: var(--color-w);
+    background-color: var(--color-p01);
+}
+.todays-movie .theater-list .swiper-slide:hover div p:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
 .todays-movie .theater-list-next,
 .todays-movie .theater-list-prev {
     position: absolute;
@@ -345,6 +399,8 @@ section {
     padding: 39px 30px;
     position: relative;
     cursor: pointer;
+    position: relative;
+    transition: 0.8s;
 }
 .busan-cinema-center-picks .pick-list-wrap .pick-list::before {
     content: '';
@@ -356,11 +412,29 @@ section {
     background-color: var(--color-g01);
 }
 .busan-cinema-center-picks .pick-list-wrap .pick-list.click {
-    background-color: var(--color-p02);
-    border-radius: 0 60px 60px 0;
     color: var(--color-w);
+    transition: 0.8s;
 }
 .busan-cinema-center-picks .pick-list-wrap .pick-list.click::before {
+    display: none;
+}
+.busan-cinema-center-picks .pick-list-wrap .pick-list .pick-list-bg {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-p04);
+    border-radius: 0 60px 60px 0;
+    z-index: -1;
+    transition: 0.8s;
+
+}
+.busan-cinema-center-picks .pick-list-wrap .pick-list.click .pick-list-bg {
+    width: 100%;
+    transition: 0.8s;
+} 
+.busan-cinema-center-picks .pick-list-wrap .pick-list .pick-list-bg span {
     display: none;
 }
 .busan-cinema-center-picks .pick-list-wrap .pick-list .category {
