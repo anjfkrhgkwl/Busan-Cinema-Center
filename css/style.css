@@ -402,8 +402,6 @@ section {
     padding: 39px 30px;
     position: relative;
     cursor: pointer;
-    position: relative;
-    transition: 0.8s;
 }
 .busan-cinema-center-picks .pick-list-wrap .pick-list::before {
     content: '';
@@ -474,3 +472,51 @@ section {
     height: 100%;
     object-fit: cover;
 }
+
+/****************************** section03 btn-quick-wrap *******************************/
+
+.btn-quick-wrap {}
+.btn-quick-wrap .section-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.btn-quick-wrap .btn-quick {}
+.btn-quick-wrap .btn-quick.on a {
+    border-color: var(--color-b);
+}
+.btn-quick-wrap .btn-quick a {
+    width: 333px;
+    height: 160px;
+    border: 2px solid var(--color-g03);
+    border-radius: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.btn-quick-wrap .btn-quick svg {
+    height: 45px;
+}
+.btn-quick-wrap .btn-quick svg circle {
+    stroke: var(--color-g03);
+}
+.btn-quick-wrap .btn-quick svg path {
+    stroke: var(--color-g03);
+}
+.btn-quick-wrap .btn-quick.on svg circle {
+    stroke: var(--color-b);
+}
+.btn-quick-wrap .btn-quick.on svg path {
+    stroke: var(--color-b);
+}
+.btn-quick-wrap .btn-quick p {
+    color: var(--color-g03);
+    font-size: 22px;
+}
+.btn-quick-wrap .btn-quick.on p {
+    color: var(--color-b);
+    font-weight: var(--font-semibold);
+}
+

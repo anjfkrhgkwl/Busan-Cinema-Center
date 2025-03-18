@@ -38,14 +38,23 @@ $(function(){
     selectTheaterBtn.click(function(){
         theaterList.slideToggle(500);
         theaterList.toggleClass('on');
-    })
+    });
 
-    
     listColor.mouseenter(function(){
         listColor.removeClass('on')
         $(this).addClass('on');
-    })
+    });
     listColor.mouseleave(function(){
         listColor.removeClass('on');
-    })
+    });
+
+
+    let quickBtn = $('.btn-quick')
+    
+    quickBtn.mouseenter(function(){
+        quickBtn.removeClass('on')
+        $(this).addClass('on');
+    });
+
+
 });
