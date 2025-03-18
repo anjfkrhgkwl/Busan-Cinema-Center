@@ -469,6 +469,44 @@
       </div><!-- .section-inner end -->
     </section><!-- .section03 btn-quick-wrap end -->
 
+    <section class="section04 event-list-wrap">
+      <div class="section-inner">
+        <div class="title-wrap">
+          <h3 class="sub-title">
+              진행중인 이벤트
+          </h3><!-- sub-title end -->
+          <h2 class="main-title">
+              놓칠 수 없는<span>이벤트</span>
+          </h2><!-- .main-title end -->
+      </div><!-- .title-wrap end -->
+
+      <div class="event-wrap">
+        <div class="swiper event-list-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="img/202501231317350.jpg" alt="event-image">
+              </a>
+            </div><!-- .swiper-slide end -->
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="img/202502131711130.jpg" alt="event-image">
+              </a>
+            </div><!-- .swiper-slide end -->
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="img/main-visual02.jpg" alt="event-image">
+              </a>
+            </div><!-- .swiper-slide end -->
+          </div><!-- .swiper-wrapper end -->
+        </div><!-- .swiper event-list-swiper end -->
+        <div class="swiper-button-next event-list-btn-next"></div>
+        <div class="swiper-button-prev event-list-btn-prev"></div>
+      </div><!-- .event-wrap end -->
+  
+      </div><!-- .section-inner end -->
+    </section><!-- .section04 event-list-wrap end -->
+
 
      <!-- Initialize Swiper -->
   <script>
@@ -486,6 +524,14 @@
         prevEl: ".theater-list-prev",
       },
     });
+
+    var swiper = new Swiper(".event-list-swiper", {
+      navigation: {
+        nextEl: ".event-list-btn-next",
+        prevEl: ".event-list-btn-prev",
+      },
+    });
+
   </script>
 </body>
 </html>

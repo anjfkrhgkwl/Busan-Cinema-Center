@@ -41,6 +41,7 @@ section {
 .main-title {
     font-size: 50px;
     font-weight: var(--font-normal);
+    margin-bottom: 30px;
 }
 .main-title span {
     font-weight: var(--font-bold);
@@ -520,3 +521,60 @@ section {
     font-weight: var(--font-semibold);
 }
 
+/*********************** .section04 event-list-wrap **************************/
+
+.event-list-wrap {}
+.event-list-wrap .section-inner {}
+.event-list-wrap .section-inner .main-title {}
+.event-list-wrap .section-inner .main-title span {
+    color: var(--color-p03);
+}
+.event-list-wrap .event-wrap {
+    position: relative;
+}
+.event-list-wrap .event-list-swiper {
+    width: 100%;
+    border: 2px solid var(--color-g01);
+    border-radius: 30px;
+}
+.event-list-wrap .event-list-swiper .swiper-wrapper {}
+.event-list-wrap .event-list-swiper .swiper-slide {}
+.event-list-wrap .event-list-swiper .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 475px;
+}
+.event-list-wrap .event-list-swiper .swiper-slide a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.event-list-wrap .event-wrap .event-list-btn-next,
+.event-list-wrap .event-wrap .event-list-btn-prev {
+    position: absolute;
+    color: var(--color-g03);
+    padding: 20px;
+    border: 2px solid var(--color-g01);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+.event-list-wrap .event-wrap .event-list-btn-next::after,
+.event-list-wrap .event-wrap .event-list-btn-prev::after {
+    font-size: 20px;
+    font-weight: var(--font-semibold);
+    margin-left: 3px;
+    margin-top: 1px;
+} 
+.event-list-wrap .event-wrap .event-list-btn-next:hover,
+.event-list-wrap .event-wrap .event-list-btn-prev:hover {
+    color: var(--color-w);
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+.event-list-wrap .event-wrap .event-list-btn-next {
+    right: -20px;
+}
+.event-list-wrap .event-wrap .event-list-btn-prev {
+    left: -20px;
+}
