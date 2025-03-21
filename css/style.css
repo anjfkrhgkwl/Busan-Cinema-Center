@@ -578,3 +578,178 @@ section {
 .event-list-wrap .event-wrap .event-list-btn-prev {
     left: -20px;
 }
+
+/******************************** .section05 movie-critique *********************************/
+.movie-critique {}
+.movie-critique .section-inner {}
+.movie-critique .main-title span {
+    color: var(--color-p04);
+}
+.movie-critique .review-list-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.movie-critique .review-list-wrap .review-list {
+    position: relative;
+    border: 2px solid var(--color-g01);
+    border-radius: 30px;
+    overflow: hidden;
+}
+.movie-critique .review-list .review-img {
+    width: 702px;
+    height: 475px;
+}
+.movie-critique .review-list .review-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.movie-critique .review-list .review-summary {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    border-radius: 0 0 30px 30px;
+    color: var(--color-b);
+    z-index: 99;
+}
+.movie-critique .review-list .review-summary::before {
+    content: '';
+    width: 100%;
+    height: 194px;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 75%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.movie-critique .review-list .review-summary .review-title {
+    font-size: 22px;
+    font-weight: var(--font-semibold);
+}
+.movie-critique .review-list .review-summary .review-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.movie-critique .review-list .review-info .review-author {
+    font-size: 20px;
+}
+.movie-critique .review-list .review-info .review-date {
+    font-size: 16px;
+}
+
+/******************************* .section06 movie-audio-description *******************************/
+.movie-audio-description {}
+.movie-audio-description .section-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 123px;
+    border: 2px solid var(--color-p04);
+    border-radius: 30px;
+}
+.movie-audio-description .audio-info {}
+.movie-audio-description .audio-info p {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.movie-audio-description .audio-info h4 {
+    font-size: 50px;
+    font-weight: var(--font-semibold);
+    color: var(--color-p04);
+}
+.movie-audio-description .audio-btn {
+    width: 246px;
+    height: 80px;
+    border: 2px solid var(--color-g01) ;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.movie-audio-description .audio-btn:hover {
+    border-color: var(--color-p04);
+    transition: 1s;
+}
+.movie-audio-description .audio-btn:hover .audio-icon {
+    margin-right: 0;
+    margin-left: 136px;
+    transition: 1s;
+
+    border-color: var(--color-p04);
+    background-color: var(--color-p04);
+}
+.movie-audio-description .audio-btn .audio-icon {
+    width: 110px;
+    height: 100%;
+    border: 2px solid var(--color-g02);
+    border-radius: 50px;
+    background-color: var(--color-g02);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 136px;
+    transition: 1s;
+}
+.movie-audio-description .audio-btn .audio-icon svg rect,
+.movie-audio-description .audio-btn .audio-icon svg path {
+    stroke: var(--color-g03);
+    transition: 1s;
+}
+.movie-audio-description .audio-btn:hover .audio-icon svg rect,
+.movie-audio-description .audio-btn:hover .audio-icon svg path {
+    stroke: var(--color-w);
+    transition: 1s;
+}
+.movie-audio-description .audio-btn .audio-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: 38px;
+    font-size: 20px;
+    color: var(--color-p04);
+    opacity: 0;
+    transition: 0.6s;
+}
+.movie-audio-description .audio-btn:hover .audio-text {
+    opacity: 1;
+    transition: 1s;
+}
+.movie-audio-description .audio-btn .audio-text p{}
+
+/************************ .section07 newsletter ********************/
+.newsletter {}
+.newsletter .section-inner {}
+.newsletter .newsletter-title {
+    width: 493px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    position: relative;
+}
+.newsletter .newsletter-title h2 {
+    font-size: 50px;
+    font-weight: var(--font-semibold);
+}
+.newsletter .newsletter-title h2 span {
+    color: var(--color-p01);
+}
+.newsletter .newsletter-title .title-img {
+    position: absolute;
+    top: -50px;
+    right: -40px;
+}
+.newsletter .newsletter-title .title-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.newsletter .newsletter-info {}
+.newsletter .newsletter-info p {}
+.newsletter .newsletter-info p span {}
+.newsletter .newsletter-btn {}
+.newsletter .newsletter-btn a {}
+.newsletter .newsletter-btn a p {}
