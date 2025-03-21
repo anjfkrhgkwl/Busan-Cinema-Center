@@ -747,9 +747,38 @@ section {
     height: 100%;
     object-fit: cover;
 }
-.newsletter .newsletter-info {}
-.newsletter .newsletter-info p {}
-.newsletter .newsletter-info p span {}
-.newsletter .newsletter-btn {}
-.newsletter .newsletter-btn a {}
-.newsletter .newsletter-btn a p {}
+.newsletter .newsletter-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 30px;
+}
+.newsletter .newsletter-info p {
+    font-size: 22px;
+    text-align: center;
+}
+.newsletter .newsletter-info p span {
+    font-weight: var(--font-semibold);
+    color: var(--color-p03);
+}
+.newsletter .newsletter-btn {
+    width: 246px;
+    height: 80px;
+    
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.newsletter .newsletter-btn:hover a {}
+.newsletter .newsletter-btn a {
+    height: 100%;
+    display: block;
+    color: var(--color-p04);
+    line-height: 80px;
+    text-align: center;
+    border: 2px solid var(--color-p04);
+    border-radius: 50px;
+}
+.newsletter .newsletter-btn a p {
+    font-size: 22px;
+}
