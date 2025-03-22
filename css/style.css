@@ -41,7 +41,6 @@ section {
 .main-title {
     font-size: 50px;
     font-weight: var(--font-normal);
-    margin-bottom: 30px;
 }
 .main-title span {
     font-weight: var(--font-bold);
