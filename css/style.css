@@ -769,7 +769,11 @@ section {
     margin: 0 auto;
     margin-top: 80px;
 }
-.newsletter .newsletter-btn:hover a {}
+.newsletter .newsletter-btn:hover a {
+    color: var(--color-w);
+    background-color: var(--color-p04);
+    transition: 0.5s;
+}
 .newsletter .newsletter-btn a {
     height: 100%;
     display: block;
@@ -778,6 +782,7 @@ section {
     text-align: center;
     border: 2px solid var(--color-p04);
     border-radius: 50px;
+    transition: 0.5s;
 }
 .newsletter .newsletter-btn a p {
     font-size: 22px;
