@@ -31,6 +31,9 @@ section {
     max-width: 1440px;
     margin: 0 auto;
 }
+.title-wrap {
+    cursor: default;
+}
 .sub-title {
     font-size: 18px;
     font-weight: var(--font-normal);
@@ -129,6 +132,7 @@ section {
 }
 .main-visual .myticket .ticket-text-wrap {
     width: 329px;
+    cursor: default;
 }
 .main-visual .myticket .ticket-text-wrap .ticket-line {
     width: 100%;
@@ -530,6 +534,7 @@ section {
 }
 .event-list-wrap .event-wrap {
     position: relative;
+    margin-top: 30px;
 }
 .event-list-wrap .event-list-swiper {
     width: 100%;
@@ -587,6 +592,7 @@ section {
 .movie-critique .review-list-wrap {
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 .movie-critique .review-list-wrap .review-list {
     position: relative;
@@ -654,6 +660,7 @@ section {
     padding: 30px 123px;
     border: 2px solid var(--color-p04);
     border-radius: 30px;
+    cursor: default;
 }
 .movie-audio-description .audio-info {}
 .movie-audio-description .audio-info p {
@@ -726,7 +733,9 @@ section {
 
 /************************ .section07 newsletter ********************/
 .newsletter {}
-.newsletter .section-inner {}
+.newsletter .section-inner {
+    cursor: default;
+}
 .newsletter .newsletter-title {
     width: 493px;
     height: 100%;
