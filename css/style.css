@@ -107,6 +107,7 @@ section {
 
 .main-visual .main-myticket {
     display: flex;
+    margin-left: 30px;
 }
 .main-visual .myticket {
     padding: 30px;
