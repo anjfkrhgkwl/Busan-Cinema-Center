@@ -224,3 +224,136 @@ body {
 .header .nav .nav-icons div img {
     height: 100%;
 }
+
+
+
+
+
+
+
+/****************************** footer *****************************/
+
+.footer {}
+.footer .footer-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 160px;
+    margin-bottom: 40px;
+}
+.footer .footer-menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .menu-list-wrap {
+    display: flex;
+    column-gap: 20px;
+}
+.footer .menu-list-wrap li {}
+.footer .menu-list-wrap li a {
+    display: block;
+    font-size: 14px;
+    color: var(--color-g03);
+}
+.footer .related-agencies {
+    width: 210px;
+    height: 50px;
+}
+.footer .related-agencies-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 50px;
+    padding: 0 30px;
+    border: 1px solid var(--color-g03);
+    border-radius: 15px;
+}
+.footer .related-agencies-btn p {
+    color: var(--color-g03);
+}
+.footer .related-agencies-btn svg {}
+.footer .related-agencies-btn svg path {}
+.footer .footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-g03);
+    margin: 30px 0;
+}
+.footer .footer-line span {
+    display: none;
+}
+.footer .footer-info {}
+.footer .footer-logo-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .footer-logo-wrap .logo-01 {
+    height: 50px;
+}
+.footer .footer-logo-wrap .logo-01 img {
+    height: 100%;
+    object-fit: cover;
+}
+.footer .footer-logo-wrap .logo-02 {
+    height: 50px;
+}
+.footer .footer-logo-wrap .logo-02 img {
+    height: 100%;
+    object-fit: cover;
+}
+.footer .footer-info-list {
+    margin-top: 40px;
+    position: relative;
+}
+.footer .footer-info-list .text-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.footer .footer-info-list .text-list li {
+    display: flex;
+    column-gap: 30px;
+    color: var(--color-g03);
+    font-size: 14px;
+}
+.footer .footer-info-list .text-list li p {}
+.footer .footer-info-list .text-list li p a {
+    color: var(--color-b);
+    position: relative;
+}
+.footer .footer-info-list .text-list li p a::before {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--color-b);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 0.6s;
+}
+.footer .footer-info-list .text-list li p a:hover::before {
+    width: 100%;
+    transition: 0.6s;
+}
+.footer .footer-sns-list-wrap {
+    display: flex;
+    column-gap: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.footer .footer-sns-list-wrap li {}
+.footer .footer-sns-list-wrap li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-g03);
+    border-radius: 50%;
+}
+.footer .footer-sns-list-wrap li a img {
+    height: 25px;
+    object-fit: cover;
+}

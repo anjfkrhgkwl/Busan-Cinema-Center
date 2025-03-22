@@ -594,6 +594,11 @@ section {
     border: 2px solid var(--color-g01);
     border-radius: 30px;
     overflow: hidden;
+    cursor: pointer;
+}
+.movie-critique .review-list-wrap .review-list:hover img {
+    transform: scale(1.05);
+    transition: 0.8s;
 }
 .movie-critique .review-list .review-img {
     width: 702px;
@@ -603,6 +608,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.8s;
 }
 .movie-critique .review-list .review-summary {
     width: 100%;

@@ -1,0 +1,118 @@
+<body>
+    <script>
+        $(function(){
+        $('a').click(function(event){
+            event.preventDefault();
+        }) //클릭 이벤트 무시
+    });
+    </script>
+
+    <div class="footer">
+        <div class="footer-inner">
+            <div class="footer-menu-wrap">
+                <ul class="menu-list-wrap">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">장애인 이용안내</a></li>
+                    <li><a href="#">취소/환불 가이드</a></li>
+                    <li><a href="#">정보공개</a></li>
+                    <li><a href="#">고객참여</a></li>
+                    <li><a href="#">자유게시판</a></li>
+                    <li><a href="#">오시는길/주차안내</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul><!-- .menu-list-wrap end -->
+                <div class="related-agencies">
+                    <div class="related-agencies-btn">
+                        <p>유관 기관</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><script xmlns=""/><script xmlns=""/>
+                            <path d="M18 9L12 15L6 9" stroke="#1C1C1C" stroke-linecap="round"/>
+                            <!-- Code injected by live-server -->
+                            <script>
+                                // <![CDATA[  <-- For SVG support
+                                if ('WebSocket' in window) {
+                                    (function () {
+                                        function refreshCSS() {
+                                            var sheets = [].slice.call(document.getElementsByTagName("link"));
+                                            var head = document.getElementsByTagName("head")[0];
+                                            for (var i = 0; i < sheets.length; ++i) {
+                                                var elem = sheets[i];
+                                                var parent = elem.parentElement || head;
+                                                parent.removeChild(elem);
+                                                var rel = elem.rel;
+                                                if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                                    var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                                    elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                                                }
+                                                parent.appendChild(elem);
+                                            }
+                                        }
+                                        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                                        var address = protocol + window.location.host + window.location.pathname + '/ws';
+                                        var socket = new WebSocket(address);
+                                        socket.onmessage = function (msg) {
+                                            if (msg.data == 'reload') window.location.reload();
+                                            else if (msg.data == 'refreshcss') refreshCSS();
+                                        };
+                                        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                                            console.log('Live reload enabled.');
+                                            sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                                        }
+                                    })();
+                                }
+                                else {
+                                    console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+                                }
+                                // ]]>
+                            </script>
+                        </svg>
+                    </div><!-- .related-agencies-btn end -->
+                </div><!-- .related-agencies end -->
+            </div><!-- footer-menu-wrap end -->
+
+            <div class="footer-line">
+                <span>line</span>
+            </div><!-- .footer-line end -->
+
+            <div class="footer-info">
+                <div class="footer-logo-wrap">
+                    <h1 class="logo-01">
+                        <img src="./img/logo/footer-logo.png" alt="footer-logo">
+                    </h1><!-- .logo-01 end -->
+                    <div class="logo-02">
+                        <img src="./img/logo/ft_logos_221229 1.png" alt="logo-wrap">
+                    </div><!-- .logo-02 end -->
+                </div><!-- .footer-logo-wrap end -->
+
+                <div class="footer-info-list">
+                    <ul class="text-list">
+                        <li>
+                            <p>48058 부산광역시 해운대구 수영강변대로 120 영화의전당(우동 1467번지)</p>
+                            <p>TEL. 051-780-6000/6080</p>
+                            <p>Fax. 051-780-6019</p>
+                        </li>
+                        <li>
+                            <p>(재)영화의전당 대표자 고인범 사업자번호 : 617-82-11427</p>
+                            <p>통신판매업신고 : 부산해운 제0510호</p>
+                            <p><a href="#">사업자정보확인</a></p>
+                        </li>
+                        <li>
+                            <p>COPYRIGHT(C) BUSAN CINEMA CENTER. ALL RIGHTS RESERVED</p>
+                        </li>
+                    </ul><!-- .text-list end -->
+                    <ul class="footer-sns-list-wrap">
+                        <li class="youtube">
+                            <a href="#"><img src="/img/footer-sns-logo/YoutubeLogo.png" alt="youtube-logo"></a>
+                        </li>
+                        <li class="facebook">
+                            <a href="#"><img src="/img/footer-sns-logo/FacebookLogo.png" alt="facebook-logo"></a>
+                        </li>
+                        <li class="instagram">
+                            <a href="#"><img src="/img/footer-sns-logo/InstagramLogo.png" alt="instagram-logo"></a>
+                        </li>
+                    </ul><!-- .footer-sns-list-wrap end -->
+                </div><!-- .footer-info-list end -->
+            </div><!-- .footer-info end -->
+
+        </div><!-- .footer-inner end -->
+    </div><!-- footer end -->
+</body>
